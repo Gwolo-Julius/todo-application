@@ -1,5 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+   font-family: "Ubuntu", sans-serif;
+}
+:root {
+  --bg-color: #ecedef;
+  --p-color: #6f707e;
+  --border-color-1: #ff7f50;
+  --border-color-2: #8fbc8f;
+  --border-color-3: #6495ed;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+p {
+  color: var(--p-color);
+}
+
+button {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.all {
+  background-color: var(--border-color-3);
+}
+input {
+  padding: 0.6rem;
+  outline-color: var(--border-color-3);
+}
+.done {
+  background-color: var(--border-color-2);
+  margin: 0.5rem 2rem;
+}
+.not_done {
+  background-color: var(--border-color-1);
+}
+.add_task {
+  background-color: green;
+  margin-left: 0.5rem;
+}
+.edit {
+  background-color: rgb(147, 147, 70);
+  margin-left: 4rem;
+}
+
+.save {
+  background-color: #8fbc8f;
+  margin-left: 4rem;
+}
+
+.container {
+  display: flex;
+  grid: 1rem;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  background-color: rgb(250, 246, 242);
+  padding: 0.3rem;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.action_btn {
+  border-radius: 0.6rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.066);
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.checked {
+  margin-right: 1rem;
+  background-color: #6495ed;
+  color: #fff;
 }
